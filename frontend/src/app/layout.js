@@ -1,16 +1,19 @@
 import React from 'react'
 import localFont from 'next/font/local'
-import '../static/globals.css'
+import '../../public/globals.css'
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
+import { getServerSideProps } from '../hooks/requests'
+import { CATEGORY } from '../urls'
+import GlobalProvider from '../context/GlobalContext'
 
 const geistSans = localFont({
-    src: '../static/fonts/GeistVF.woff',
+    src: '../../public/fonts/GeistVF.woff',
     variable: '--font-geist-sans',
     weight: '100 900',
 })
 const geistMono = localFont({
-    src: '../static/fonts/GeistMonoVF.woff',
+    src: '../../public/fonts/GeistMonoVF.woff',
     variable: '--font-geist-mono',
     weight: '100 900',
 })
@@ -19,14 +22,17 @@ export const metadata = {
     title: 'Isomer Oil',
     description: 'Переработка нефтенных продуктов',
 }
+export default async function RootLayout({ children }) {
+    const categories = await getServerSideProps(CATEGORY)
 
-export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <Header />
-                {children}
-                <Footer />
+                <GlobalProvider>
+                    <Header categories={categories.response} />
+                    {children}
+                    <Footer />
+                </GlobalProvider>
             </body>
         </html>
     )

@@ -1,11 +1,9 @@
-from django.http import HttpResponse
 from django.urls import path
 
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
-
+from main.views.about import AboutDetailView
+from main.views.category import CategoryListView
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('category', CategoryListView.as_view(), name='category'),
+    path('about/<int:id>', AboutDetailView.as_view(), name='about-detail'),
 ]
