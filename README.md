@@ -1,6 +1,6 @@
 # 🌍 ISOMER OIL Web Application
 
-A moder web application built with **Next.js** (Frontend), **Django REST Framework (DRF)** (Backend), **Tailwind CSS**, and **PostgreSQL**. This app is designed for **ISOMER OIL**, an oil refining company, providing information about the company, products, contact details, and other relevant sections.
+A modern web application built with **Next.js** (Frontend), **Django REST Framework (DRF)** (Backend), **Tailwind CSS**, and **PostgreSQL**. This app is designed for **ISOMER OIL**, an oil refining company, providing information about the company, products, contact details, and other relevant sections.
 
 ---
 
