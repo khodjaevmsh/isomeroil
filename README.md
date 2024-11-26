@@ -24,16 +24,6 @@ A modern web application built with **Next.js** (Frontend), **Django REST Framew
 
 ---
 
-## 📥 Installation
-
-### Prerequisites:
-- Node.js (for Frontend)
-- Python 3.x (for Backend)
-- PostgreSQL (for Database)
-- pip (for Python dependencies)
-
----
-
 ## 📊 Pages
 
 ### About the Company
@@ -46,14 +36,7 @@ A modern web application built with **Next.js** (Frontend), **Django REST Framew
 - A simple contact form allowing users to reach out to the company for inquiries or support.
 
 ### Additional Features
-- User authentication (optional).
 - Admin panel to manage content, products, and other resources.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -62,7 +45,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For further information, inquiries, or collaboration, feel free to reach out to us:
 
 - 📧 Email: [khodjaevmsh@gmail.com](mailto:khodjaevmsh@gmail.com)
-- 🌐 GitHub: [your GitHub profile](https://github.com/khodjaevmsh)
+- 🌐 GitHub: [khodjaevmsh](https://github.com/khodjaevmsh)
 
 ---
 
