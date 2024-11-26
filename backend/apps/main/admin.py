@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from main.models import Category, Subcategory, News, About
+from main.models import Category, Subcategory, News, About, Product, PriceHistory
 
 
 # Register your models here.
@@ -24,6 +24,21 @@ class AboutAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         # Запрещаем удаление записи
         return False
+
+
+class PriceHistoryInline(admin.TabularInline):
+    model = PriceHistory
+    extra = 0
+
+    def has_delete_permission(self, request, obj=None):
+        # Запрещаем удаление записи
+        return False
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('name', 'price')
+    inlines = [PriceHistoryInline]
 
 
 @admin.register(News)

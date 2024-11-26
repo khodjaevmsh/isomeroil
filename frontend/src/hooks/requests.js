@@ -3,9 +3,12 @@ import humps from 'humps'
 const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 export const domain = backendUrl.endsWith('/') ? backendUrl.substr(0, backendUrl.length - 1) : backendUrl
 
-export async function getServerSideProps(url, options = {}) {
+export async function getServerSideProps(url, params = {}, options = {}) {
     try {
-        const response = await fetch(`${domain}/api/v1/${url}`, { cache: 'no-store', ...options })
+        const queryString = new URLSearchParams(params).toString()
+        const requestUrl = queryString ? `${domain}/api/v1/${url}?${queryString}` : `${domain}/api/v1/${url}`
+
+        const response = await fetch(requestUrl, { cache: 'no-store', ...options })
 
         if (!response.ok) {
             console.log('Something is wrong...')

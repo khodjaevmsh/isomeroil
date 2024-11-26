@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { Calendar, Eye } from 'react-feather'
 import moment from 'moment'
-import SectionWithSide from '../../components/common/SectionWithSide'
-import { getServerSideProps } from '../../hooks/requests'
-import { ABOUT_DETAIL, PRODUCTS } from '../../urls'
+import { ABOUT_DETAIL, PRODUCTS } from '../urls'
+import { getServerSideProps } from '../hooks/requests'
+import SectionWithSide from './common/SectionWithSide'
 
-export default async function Page() {
+export default async function AboutLayout() {
     const about = await getServerSideProps(ABOUT_DETAIL.replace('{id}', '1'))
     const products = await getServerSideProps(PRODUCTS)
 
