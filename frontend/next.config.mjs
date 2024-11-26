@@ -6,6 +6,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: '**', // Allows all hostnames
             },
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+                port: '8000',
+            },
         ],
     },
 };

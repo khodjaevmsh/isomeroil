@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 
+/* eslint-disable max-len */
 export default function Header({ categories }) {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -15,7 +16,6 @@ export default function Header({ categories }) {
             <div className="container px-5 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="text-base font-semibold text-orange-600">ISOMEROIL</Link>
-
                     {/* Mobile menu button */}
                     <div className="flex lg:hidden">
                         <button
@@ -39,21 +39,21 @@ export default function Header({ categories }) {
                         </button>
                     </div>
                 </div>
-
                 {/* Mobile Menu open: "block", Menu closed: "hidden" */}
                 <div
                     className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-gray-950 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}>
                     <div className="flex flex-col md:flex-row md:mx-6">
                         {categories && categories.length > 0 ? categories.map((category) => (
                             <div key={category.id} className="relative group">
+                                {/* eslint-disable-next-line max-len */}
                                 <a href="#" className="my-2 text-gray-100 transition-colors duration-300 pb-10 transform hover:text-blue-50 md:mx-4 md:my-0">
                                     {category.name}
                                 </a>
                                 {category.subcategories && category.subcategories.length > 0 && (
                                     <div className="absolute left-0 top-11 hidden group-hover:block bg-gray-950 text-white px-2 py-1 rounded shadow-lg">
-                                        {category.subcategories.map((subCategory) => (
-                                            <Link key={subCategory.id} href={`/category/subcategory/${subCategory.id}`} className="block py-2 px-4 text-sm font-semibold hover:text-orange-500 transition-colors duration-200">
-                                                {subCategory.name}
+                                        {category.subcategories.map((subcategory) => (
+                                            <Link key={subcategory.id} href={`/categories/${category.id}/subcategories/${subcategory.id}`} className="block py-2 px-4 text-sm font-semibold hover:text-orange-500 transition-colors duration-200">
+                                                {subcategory.name}
                                             </Link>
                                         ))}
                                     </div>
@@ -62,7 +62,6 @@ export default function Header({ categories }) {
                         )) : null}
                     </div>
                 </div>
-
             </div>
         </nav>
     )

@@ -1,3 +1,5 @@
 export const CATEGORY = 'main/category'
-export const ABOUT = 'main/about'
+export const SUBCATEGORY = 'main/subcategory/{id}'
 export const ABOUT_DETAIL = 'main/about/{id}'
+export const PRODUCTS = 'main/product'
+export const PRODUCT_DETAIL = 'main/product/{id}'

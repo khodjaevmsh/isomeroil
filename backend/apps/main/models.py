@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 # Create your models here.
@@ -49,15 +50,37 @@ class Product(models.Model):
         ('sulfur', 'Сера'),
         ('solvent', 'Углеводородный растворитель'),
     ]
-
+    subcategory = models.ForeignKey('main.Subcategory', related_name="products", on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     product_type = models.CharField(max_length=50, choices=PRODUCT_TYPES)
     characteristics = models.TextField()
     release_date = models.DateField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    cover = models.ImageField(default='default-image.png', upload_to='products/cover')
+    views = models.IntegerField(default=0)
 
     def __str__(self):
         return f'{self.name} ({self.product_type})'
+
+    def save(self, *args, **kwargs):
+        if self.pk:
+            original = Product.objects.get(pk=self.pk)
+            if original.price != self.price:
+                PriceHistory.objects.create(
+                    product=self,
+                    old_price=original.price,
+                    new_price=self.price
+                )
+        super().save(*args, **kwargs)
+
+
+class PriceHistory(BaseModel):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='price_history')
+    old_price = models.DecimalField(max_digits=10, decimal_places=2)
+    new_price = models.DecimalField(max_digits=10, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.product.name} - {self.old_price} → {self.new_price}"
 
 
 class News(BaseModel):

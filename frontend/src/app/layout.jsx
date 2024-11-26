@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import localFont from 'next/font/local'
 import '../../public/globals.css'
 import Header from '../components/common/Header'
@@ -6,6 +6,7 @@ import Footer from '../components/common/Footer'
 import { getServerSideProps } from '../hooks/requests'
 import { CATEGORY } from '../urls'
 import GlobalProvider from '../context/GlobalContext'
+import Loading from './loading'
 
 const geistSans = localFont({
     src: '../../public/fonts/GeistVF.woff',
@@ -30,7 +31,9 @@ export default async function RootLayout({ children }) {
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <GlobalProvider>
                     <Header categories={categories.response} />
-                    {children}
+                    <Suspense fallback={<Loading />}>
+                        {children}
+                    </Suspense>
                     <Footer />
                 </GlobalProvider>
             </body>
