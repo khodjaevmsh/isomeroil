@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { Calendar, Eye } from 'react-feather'
 import moment from 'moment/moment'
 import SectionWithSide from '../../../components/common/SectionWithSide'
