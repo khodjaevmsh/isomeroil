@@ -4,41 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2cf81f8-5d45-4a6e-8c16-a47b773c3e97" name="Changes" comment="some functions are implemented (About, News and Product)">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/categories/[category]/subcategories/[subcategory]/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/products/[productId]/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/products/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/AboutLayout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductsLayout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/SectionWithSide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+    <list default="true" id="d2cf81f8-5d45-4a6e-8c16-a47b773c3e97" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/backend/apps/main/serializers/news.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/main/views/news.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/news/[newsId]/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/News.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/isomeroil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/isomeroil.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/main/serializers/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/serializers/product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/main/views/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/views/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/main/views/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/views/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/about/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/category/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/categories/layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/category/subcategory/[subcategoryId]/page.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/[productId]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/products/[productId]/page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Section.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/requests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +26,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -80,44 +66,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;product&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.7&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/khodjaevmsh/projects/isomeroil/frontend/src/app/products/[productId]&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.python.django.customization.DjangoModulesConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/PyCharm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.isomeroil.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "news",
+    "javascript.nodejs.core.library.configured.version": "20.17.0",
+    "javascript.nodejs.core.library.typings.version": "20.17.7",
+    "last_opened_file_path": "/Users/khodjaevmsh/projects/isomeroil/backend/apps/main/views",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/apps/main/views" />
+      <recent name="$PROJECT_DIR$/backend/apps/main/serializers" />
       <recent name="$PROJECT_DIR$/frontend/src/app/products/[productId]" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend/apps/main/serializers" />
-      <recent name="$PROJECT_DIR$/backend/apps/main/views" />
       <recent name="$PROJECT_DIR$/frontend/src/context" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/apps/main" />
       <recent name="$PROJECT_DIR$/frontend/src/app/categories/[category]/subcategories" />
       <recent name="$PROJECT_DIR$/frontend/src/app/categories/[category]" />
       <recent name="$PROJECT_DIR$/frontend/public" />
       <recent name="$PROJECT_DIR$/frontend/public/images" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/category" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.isomeroil">
@@ -128,6 +115,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="config.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -188,6 +176,8 @@
       <workItem from="1732501400548" duration="5631000" />
       <workItem from="1732507781035" duration="41000" />
       <workItem from="1732507828791" duration="22278000" />
+      <workItem from="1732686344146" duration="23000" />
+      <workItem from="1732686376742" duration="9927000" />
     </task>
     <task id="LOCAL-00001" summary="setup project">
       <option name="closed" value="true" />
@@ -223,6 +213,7 @@
     <MESSAGE value="setup project" />
     <MESSAGE value="delete .idea folder" />
     <MESSAGE value="some functions are implemented (About, News and Product)" />
-    <option name="LAST_COMMIT_MESSAGE" value="some functions are implemented (About, News and Product)" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

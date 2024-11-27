@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 
 export default function ProductCard({ item }) {
     return (
-        <div className="bg-gray-900 text-white rounded-xl overflow-hidden shadow-lg lg:w-[32%] lg:h-44 p-4
+        <div className="bg-gray-900 text-white rounded-xl overflow-hidden shadow-lg lg:w-[32%] lg:h-52 p-4
              flex flex-col justify-between">
             <div>
                 <h3 className="text-xl font-bold mb-2">{item.name}</h3>

@@ -10,7 +10,7 @@ export default function Sidebar({ products = [] }) {
             <hr />
             <ul>
                 {products && products.length > 0 ? products.map((item) => (
-                    <li className="flex flex-row items-center justify-between py-3.5">
+                    <li key={item.id} className="flex flex-row items-center justify-between py-3.5">
                         <div className="flex flex-row items-center space-x-4">
                             <Image
                                 src={item.cover ? item.cover : '/images/hero.png'}

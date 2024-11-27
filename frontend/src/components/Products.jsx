@@ -9,7 +9,7 @@ export default function Products({ products }) {
             <div className="container mx-auto">
                 <div className="mb-16 lg:text-left text-center">
                     <h1 className="text-4xl lg:text-5xl text-orange-600 font-semibold">Продукция</h1>
-                    <p className="text-sm text-white my-4 leading-relaxed">
+                    <p className="text-lg text-white my-4 leading-relaxed">
                         Широкий выбор нефтепродуктов: бензины, экологичное дизтопливо, мазут, сера и <br />
                         растворители для любых нужд.
                     </p>
