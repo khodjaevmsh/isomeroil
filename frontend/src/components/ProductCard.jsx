@@ -5,11 +5,11 @@ import { clsx } from 'clsx'
 
 export default function ProductCard({ item }) {
     return (
-        <div className="bg-gray-900 text-white rounded-xl overflow-hidden shadow-lg lg:w-[32%] lg:h-52 p-4
+        <div className="bg-gray-900 text-white rounded-xl overflow-hidden shadow-lg lg:w-[32%] lg:h-52 p-5
              flex flex-col justify-between">
             <div>
                 <h3 className="text-xl font-bold mb-2">{item.name}</h3>
-                <p className="text-sm text-gray-300 mb-8"> {item.characteristics.substr(0, 110)}...</p>
+                <p className="text-gray-300 mb-8"> {item.characteristics.substr(0, 100)}...</p>
             </div>
             <div className="flex items-center justify-between mt-auto">
                 <div className={clsx('flex flex-row items-center text-green-500 space-x-1 font-semibold', {

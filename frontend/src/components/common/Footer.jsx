@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../../../public/images/logo.png'
 
 export default function Footer() {
     return (
@@ -8,7 +10,15 @@ export default function Footer() {
                 <div className="lg:flex">
                     <div className="w-full -mx-6 lg:w-2/5">
                         <div className="px-6">
-                            <Link href="/" className="text-base font-semibold text-orange-600">ISOMEROIL</Link>
+                            <Link href="/" className="text-base font-semibold text-orange-600">
+                                <Image
+                                    src={logo}
+                                    width={150}
+                                    height={150}
+                                    className="w-40 h-auto"
+                                    alt="Продукция ISOMER OIL"
+                                />
+                            </Link>
                             <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
                                 Join 31,000+ other and never miss out on new tips, tutorials, and more.
                             </p>

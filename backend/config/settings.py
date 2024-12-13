@@ -57,10 +57,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGIN = [
-    'http://localhost:3000',
-    'http://localhost:8000',
-]
+# CORS_ALLOWED_ORIGIN = [
+#     'http://localhost:3000',
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'config.urls'
 
@@ -133,6 +133,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'files/static')
 
 MEDIA_URL = '/files/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'files/media')
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP host
+EMAIL_HOST_USER = "khodjaevmsh@@gmail.com"  # Your email address
+EMAIL_HOST_PASSWORD = "cwmvsxporwuneilp"  # Your email password
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
