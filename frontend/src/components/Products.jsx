@@ -5,7 +5,7 @@ import ProductCard from './ProductCard'
 
 export default function Products({ products }) {
     return (
-        <section className="mb-20 py-20 bg-gray-950 overflow-x-hidden">
+        <section className="mb-24 py-20 bg-gradient-to-br from-gray-800 to-black  overflow-x-hidden">
             <div className="container mx-auto">
                 <div className="mb-16 lg:text-left text-center">
                     <h1 className="text-4xl lg:text-5xl text-orange-600 font-semibold">Продукция</h1>

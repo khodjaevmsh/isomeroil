@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2cf81f8-5d45-4a6e-8c16-a47b773c3e97" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/backend/apps/main/serializers/news.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/main/views/news.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/news/[newsId]/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/main/templates/main/mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/main/views/send_mail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/company.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ContactUs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/StatsSection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/WhyWe.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/isomeroil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/isomeroil.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/[productId]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/products/[productId]/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/News.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +80,11 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "news",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "contacts",
     "javascript.nodejs.core.library.configured.version": "20.17.0",
     "javascript.nodejs.core.library.typings.version": "20.17.7",
-    "last_opened_file_path": "/Users/khodjaevmsh/projects/isomeroil/backend/apps/main/views",
+    "last_opened_file_path": "/Users/khodjaevmsh/projects/isomeroil/frontend/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -93,11 +102,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public/images" />
       <recent name="$PROJECT_DIR$/backend/apps/main/views" />
       <recent name="$PROJECT_DIR$/backend/apps/main/serializers" />
       <recent name="$PROJECT_DIR$/frontend/src/app/products/[productId]" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/frontend/src/context" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/apps/main" />

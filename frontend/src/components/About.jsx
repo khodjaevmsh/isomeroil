@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function About({ about }) {
     return (
-        <section className="container mx-auto lg:py-20 py-10">
+        <section className="container mx-auto lg:py-24 py-10">
             <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-8">
                 <span className="inline-block lg:hidden border lg:text-xl px-4 py-1 border-orange-600 rounded-full">
                     О нас

@@ -3,8 +3,8 @@ from django.urls import path
 from main.views.about import AboutDetailView
 from main.views.category import CategoryListView, SubcategoryDetailView
 from main.views.product import ProductListView, ProductDetailView
-
 from main.views.news import NewsListView, NewsDetailView
+from main.views.send_mail import send_test_email
 
 urlpatterns = [
     path('category', CategoryListView.as_view(), name='category-list'),
@@ -14,5 +14,6 @@ urlpatterns = [
     path('product/<int:id>', ProductDetailView.as_view(), name='product'),
     path('news', NewsListView.as_view(), name='news-list'),
     path('news/<int:id>', NewsDetailView.as_view(), name='news'),
+    path('send-mail', send_test_email, name='send-mail'),
 
 ]

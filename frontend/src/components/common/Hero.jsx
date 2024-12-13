@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-orange-700 via-black to-black opacity-80" />
                 <Image
-                    src="/images/hero.png"
+                    src="/images/company.JPG"
                     width={1920}
                     height={1080}
                     className="w-full h-full object-cover opacity-65"

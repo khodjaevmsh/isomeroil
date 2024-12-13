@@ -4,7 +4,7 @@ import { ChevronRight } from 'react-feather'
 
 export default function News({ news }) {
     return (
-        <section className="container mx-auto px-5 lg:px-0">
+        <section className="container mx-auto px-5 lg:px-0 mb-28">
             <h1 className="text-4xl lg:text-5xl lg:text-left text-center font-semibold mb-10">Новости</h1>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 my-6">
