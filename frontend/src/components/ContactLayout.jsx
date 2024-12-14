@@ -1,13 +1,14 @@
 'use client'
 
 import React, { useState } from 'react'
-import { MapPin } from 'react-feather'
+import { Mail, MapPin, Phone } from 'react-feather'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
+import SectionWithSide from './common/SectionWithSide'
 
 /* eslint-disable max-len */
 /* eslint-disable no-console */
-export default function ContactSection() {
+export default function ContactLayout({ prices, subcategory }) {
     const [alertVisible, setAlertVisible] = useState(false)
     const [loading, setLoading] = useState(false)
 
@@ -40,8 +41,9 @@ export default function ContactSection() {
             setLoading(false)
         }
     }
+
     return (
-        <div className="bg-white px-6 text-gray-800 pb-20">
+        <SectionWithSide products={prices}>
             {alertVisible && (
                 <div
                     className="w-96 h-24 fixed top-4 right-4 bg-green-500 text-white px-4 py-4 flex flex-row items-center space-x-4 rounded-md shadow-md">
@@ -52,17 +54,59 @@ export default function ContactSection() {
                     </div>
                 </div>
             )}
-            <div className="container mx-auto">
-                <h1 className="text-4xl lg:text-5xl lg:text-left text-center font-semibold mb-10">
-                    Свяжитесь с нами
-                </h1>
-                <div className="lg:flex lg:flex-row items-start gap-6">
+            <h1 className="text-5xl font-bold mb-6">{subcategory.name}</h1>
+            <div>
+                <div className="lg:w-full h-96 mt-10">
+                    <iframe
+                        title="Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49100.50046583669!2d64.50995841949256!3d39.72209786900847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f501c978bc545a7%3A0x59d1d62dfa88415a!2z0JrQsNCz0LDQvSwg0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1732805271947!5m2!1sru!2sus"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        aria-hidden="false"
+                        loading="lazy"
+                        className="rounded-xl"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+                </div>
+
+                <div className="my-8">
+                    <div className="container mx-auto flex flex-col items-start">
+                        <div className="flex flex-row items-center space-x-2">
+                            <Phone size={22} />
+                            <p className="font-semibold text-lg">Хотите связаться с нами</p>
+                        </div>
+                        <p className="text-gray-500">+998 55 303 26 62</p>
+                    </div>
+
+                    <div className="py-7 container mx-auto flex flex-col items-start">
+                        <div className="flex flex-row items-center space-x-2">
+                            <Mail size={22} />
+                            <p className="font-semibold text-lg">Хотите отправить письмо</p>
+                        </div>
+                        <p className="text-gray-500">isomeroil@gmail.com</p>
+                    </div>
+
+                    <div className="container mx-auto flex flex-col items-start">
+                        <div className="flex flex-row items-center space-x-2">
+                            <MapPin size={22} />
+                            <p className="font-semibold text-lg">Где вы можете нас найти</p>
+                        </div>
+                        <p className="text-gray-500">Бухарская область, г. Каган, поселок Амиробод.</p>
+                    </div>
+                </div>
+
+                <hr />
+                <h1 className="text-2xl font-bold mt-16 mb-10">Либо оставьте нам номер телефона, мы свяжемся с вами</h1>
+                <div className="lg:flex lg:flex-row items-start">
                     <Formik
                         initialValues={{ name: '', phone: '' }}
                         validationSchema={validationSchema}
                         onSubmit={onSubmit}>
                         {({ handleSubmit, handleChange, values }) => (
-                            <form onSubmit={handleSubmit} className="space-y-6 lg:w-1/2 lg:mb-0 mb-10">
+                            <form onSubmit={handleSubmit} className="space-y-6 lg:w-full lg:mb-0 mb-10">
                                 <div>
                                     <label htmlFor="name" className="block text-lg text-gray-700 font-semibold">
                                         Ваше имя / Компания
@@ -115,31 +159,8 @@ export default function ContactSection() {
                         )}
                     </Formik>
 
-                    <div className="lg:w-1/2 h-72">
-                        <iframe
-                            title="Map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49100.50046583669!2d64.50995841949256!3d39.72209786900847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f501c978bc545a7%3A0x59d1d62dfa88415a!2z0JrQsNCz0LDQvSwg0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1732805271947!5m2!1sru!2sus"
-                            width="100%"
-                            height="100%"
-                            frameBorder="0"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            aria-hidden="false"
-                            loading="lazy"
-                            className="rounded-xl"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
-                    </div>
                 </div>
             </div>
-
-            <div className="py-5 container mx-auto flex flex-col items-end">
-                <div className="flex flex-row items-center space-x-2">
-                    <MapPin size={22} />
-                    <p className="font-semibold text-lg">Где вы можете нас найти</p>
-                </div>
-                <p className="text-gray-500">Бухарская область, г. Каган, поселок Амиробод.</p>
-            </div>
-        </div>
+        </SectionWithSide>
     )
 }

@@ -1,0 +1,66 @@
+-
+    model: "main.Category"
+    pk: 1
+    fields:
+        name: 'О компании'
+-
+    model: "main.Category"
+    pk: 2
+    fields:
+        name: 'Продукция'
+-
+    model: "main.Category"
+    pk: 3
+    fields:
+        name: 'Новости'
+-
+    model: "main.Category"
+    pk: 4
+    fields:
+        name: 'Контакты'
+
+
+# SUBCATEGORY BELOW
+-
+    model: "main.Subcategory"
+    pk: 1
+    fields:
+        category: 1
+        name: 'Компания'
+-
+    model: "main.Subcategory"
+    pk: 2
+    fields:
+        category: 2
+        name: 'Автомобильные бензины'
+-
+    model: "main.Subcategory"
+    pk: 3
+    fields:
+        category: 2
+        name: 'Дизельное топливо'
+-
+    model: "main.Subcategory"
+    pk: 4
+    fields:
+        category: 2
+        name: 'Мазут'
+-
+    model: "main.Subcategory"
+    pk: 5
+    fields:
+        category: 2
+        name: 'Прочая продукция'
+-
+    model: "main.Subcategory"
+    pk: 6
+    fields:
+        category: 3
+        name: 'Новости компании'
+
+-
+    model: "main.Subcategory"
+    pk: 7
+    fields:
+        category: 4
+        name: 'Контакты компании'
