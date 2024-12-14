@@ -147,7 +147,7 @@ EMAIL_USE_SSL = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-try:
-    from .settings_dev import *
-except ImportError:
-    pass
+# try:
+#     from .settings_dev import *
+# except ImportError:
+#     pass
