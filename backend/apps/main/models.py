@@ -35,7 +35,7 @@ class About(BaseModel):
     address = models.TextField(null=True, blank=True)
     phone = models.CharField(max_length=20, null=True)
     email = models.EmailField(null=True, blank=True)
-    logo = models.ImageField(upload_to='company_logos/', null=True, blank=True)
+    logo = models.ImageField(upload_to='company_logos/', default='default.png', null=True, blank=True)
     views = models.PositiveIntegerField(default=0)
 
     def __str__(self):
@@ -56,7 +56,7 @@ class Product(models.Model):
     characteristics = models.TextField()
     release_date = models.DateField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    cover = models.ImageField(default='default-image.png', upload_to='products/cover')
+    cover = models.ImageField(default='default.png', upload_to='products/cover')
     views = models.IntegerField(default=0)
 
     def __str__(self):
@@ -88,7 +88,7 @@ class News(BaseModel):
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
     description = models.TextField()
-    cover = models.ImageField(default='default-image.png', upload_to='news/cover')
+    cover = models.ImageField(default='default.png', upload_to='news/cover')
     available = models.BooleanField(default=True)
     views = models.IntegerField(default=0)
 

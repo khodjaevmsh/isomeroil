@@ -23,6 +23,7 @@ export const metadata = {
     title: 'Isomer Oil',
     description: 'Переработка нефтенных продуктов',
 }
+
 export default async function RootLayout({ children }) {
     const categories = await getServerSideProps(CATEGORY)
 

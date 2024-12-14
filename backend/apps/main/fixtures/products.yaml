@@ -1,0 +1,94 @@
+# Автомобильные бензины
+- model: "main.Product"
+  pk: 1
+  fields:
+      subcategory: 2
+      name: 'Аи-80'
+      product_type: 'gasoline'
+      characteristics: 'Бензин марки Аи-80 произведён методом компаундирования. Подходит для двигателей с низкими требованиями к октановому числу.'
+      release_date: '2023-01-01'
+      price: 1000
+
+- model: "main.Product"
+  pk: 2
+  fields:
+      subcategory: 2
+      name: 'Аи-91'
+      product_type: 'gasoline'
+      characteristics: 'Топливо средней октановой группы, созданное методом компаундирования, для надёжной и стабильной работы двигателя.'
+      release_date: '2023-01-01'
+      price: 1100
+
+- model: "main.Product"
+  pk: 3
+  fields:
+      subcategory: 2
+      name: 'Аи-92'
+      product_type: 'gasoline'
+      characteristics: 'Универсальное топливо, произведённое методом компаундирования. Подходит для большинства современных автомобилей.'
+      release_date: '2023-01-01'
+      price: 1200
+
+- model: "main.Product"
+  pk: 4
+  fields:
+      subcategory: 2
+      name: 'Аи-95'
+      product_type: 'gasoline'
+      characteristics: 'Премиальный бензин, разработанный для двигателей с высокой степенью сжатия. Способствует улучшению динамических характеристик автомобиля.'
+      release_date: '2023-01-01'
+      price: 1300
+
+# Дизельное топливо
+- model: "main.Product"
+  pk: 5
+  fields:
+      subcategory: 3
+      name: 'Дизельное топливо (экологическое)'
+      product_type: 'diesel'
+      characteristics: 'Дизельное топливо с улучшенными экологическими свойствами. Минимизирует выброс вредных веществ и продлевает срок службы двигателя.'
+      release_date: '2023-01-01'
+      price: 1400
+
+- model: "main.Product"
+  pk: 6
+  fields:
+      subcategory: 3
+      name: 'Дизельное топливо (зимнее)'
+      product_type: 'diesel'
+      characteristics: 'Зимний вид дизельного топлива с различными температурами застывания. Обеспечивает стабильную работу двигателя при низких температурах.'
+      release_date: '2023-01-01'
+      price: 1500
+
+# Мазут
+- model: "main.Product"
+  pk: 7
+  fields:
+      subcategory: 4
+      name: 'Мазут'
+      product_type: 'black_oil'
+      characteristics: 'Мазут различных марок, предназначенный для промышленного использования и отопления. Отличается высокой теплотворной способностью.'
+      release_date: '2023-01-01'
+      price: 800
+
+# Сера
+- model: "main.Product"
+  pk: 8
+  fields:
+      subcategory: 5
+      name: 'Сера'
+      product_type: 'sulfur'
+      characteristics: 'Высококачественная сера для использования в химической промышленности, сельском хозяйстве и других отраслях.'
+      release_date: '2023-01-01'
+      price: 500
+
+# Углеводородный растворитель
+- model: "main.Product"
+  pk: 9
+  fields:
+      subcategory: 5
+      name: 'Углеводородный растворитель'
+      product_type: 'solvent'
+      characteristics: 'Универсальный углеводородный растворитель для широкого спектра промышленных применений, включая очистку и производство красок.'
+      release_date: '2023-01-01'
+      price: 600
